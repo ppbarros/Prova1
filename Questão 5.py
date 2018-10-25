@@ -1,0 +1,11 @@
+ph = float(input('Quanto você ganha por hora trabalhada? R$ '))
+ht = float(input('Quantas horas você trabalhou? '))
+sb = ph * ht
+ir = sb * 0.11
+inss = sb * 0.08
+sind = sb * 0.05
+sl = sb - (ir + inss + sind)
+print(f'''Salário bruto = R$ {sb}
+INSS = R$ {inss}
+Sindicato = R${sind}
+Salário Líquido = R$ {sl}''')
